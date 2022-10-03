@@ -1,0 +1,380 @@
+/*------------------------- 
+common style for all pages 
+--------------------------*/
+
+/* style for all elements */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* style for header and navigation bar for all pages-------------*/
+#header-nav-container {
+  background-color: seagreen;
+  color: white;
+  height: 160px;
+}
+/* style for header */
+#header-container {
+  display: flex;
+}
+#header-container a i {
+  font-size: 3rem;
+  color: white;
+  margin: 10px 1vw 0 10vw;
+}
+#header-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+/* style for navigation bar */
+nav ol {
+  float: right;
+  margin-right: 10vw;
+  list-style: none;
+}
+
+nav ol li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 1vw;
+}
+nav ol li a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+#active,
+nav li a:hover {
+  background-color: rgb(38, 95, 63);
+  transition: 0.5s;
+}
+/* style for navigation bar dropdown */
+.nav-dropdown-content {
+  display: none;
+}
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: seagreen;
+  padding: 5px;
+}
+
+/* style for content container and main content container for all pages----------*/
+#content-container {
+  width: 80%;
+  margin: 5vh auto;
+  padding: 1rem;
+  display: flex;
+  text-align: left;
+}
+#main-content-container {
+  width: 60vw;
+}
+/* style for sidebar for all pages---------*/
+#sidebar-container {
+  width: 20vw;
+  margin-left: 2%;
+}
+#sidebar-container h2 {
+  color: seagreen;
+}
+#sidebar-first-container {
+  background-color: rgb(239, 235, 235);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 2vh;
+}
+#sidebar-first-container img {
+  width: 90%;
+}
+#sidebar-first-container .sub-section {
+  margin-top: 5vh;
+}
+#sidebar-first-container span {
+  color: seagreen;
+}
+
+.sidebar-video {
+  margin-bottom: 5vh;
+  padding: 2%;
+}
+.sidebar-video iframe {
+  width: 100%;
+}
+
+#sidebar-subscribe-container {
+  padding: 2%;
+  background-color: rgb(239, 235, 235);
+  border-radius: 3px;
+}
+/* style for footer for all pages---------- */
+footer {
+  background-color: seagreen;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 15px;
+}
+.socials a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.socials a i {
+  font-size: 1.3rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: rgb(38, 95, 63);
+}
+
+.footer-bottom {
+  background-color: rgb(38, 95, 63);
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+#back-home-btn {
+  position: fixed;
+  bottom: 1vh;
+  right: 3vw;
+  z-index: 99;
+  width: 8em;
+  border: none;
+  outline: none;
+  background-color: rgb(200, 121, 12);
+  color: white;
+  cursor: pointer;
+  padding: 0.8vh;
+  border-radius: 10px;
+}
+
+/*------------------------- 
+style spically for home page 
+--------------------------*/
+
+/* style for welcome section in home page----- */
+#home-welcome-container img {
+  width: 40vw;
+  height: auto;
+  margin: 1%;
+  text-align: center;
+}
+/* style for discover section in home page----- */
+#home-discover-container {
+  margin-top: 5%;
+}
+
+/* style for image-content-pattern------------- */
+.imageContent-container {
+  display: flex;
+  margin: 1% 1%;
+}
+.imageContent-img {
+  width: 35%;
+}
+.imageContent-content {
+  margin: 0 1%;
+}
+.imageContent-content a {
+  text-decoration: none;
+  color: seagreen;
+}
+hr.separate-sections {
+  border: 2px solid seagreen;
+}
+
+/*------------------------- 
+style for all articles
+--------------------------*/
+
+/* style for article content------------- */
+.imageArticle-container {
+  margin: 8vh 0;
+}
+.imageArticle-container h3 {
+  text-align: center;
+  margin: 3vh 0;
+}
+
+.imageArticle-article {
+  line-height: 3vh;
+}
+/* style for read more content */
+.dots.hide-dots {
+  display: none;
+}
+.more-content {
+  display: none;
+}
+.more-content.show-more {
+  display: block;
+}
+/* style for images in articles---------- */
+.imageArticle-img {
+  width: 40%;
+  float: left;
+  margin: 1vw;
+}
+.imageArticle-article img {
+  display: block;
+  margin: 1.5vh auto;
+  width: 50%;
+}
+
+/*------------------------- 
+   responsive CSS 
+--------------------------*/
+/* CSS when browser window is 1200px or less------------- */
+@media (max-width: 1200px) {
+  /* style change for header and navigation bar */
+  #header-container {
+    justify-content: center;
+  }
+  #header-container a i {
+    margin: 10px 1vw 0 0;
+  }
+  nav ol {
+    margin-right: 5vw;
+  }
+  nav ol {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ol li {
+    line-height: 80px;
+    margin: 0 1vw;
+  }
+  /* style change for content containers*/
+  #content-container {
+    width: 90%;
+  }
+  #main-content-container {
+    width: 60vw;
+  }
+  /* style change for sidebar */
+  #sidebar-container {
+    width: 30vw;
+  }
+}
+
+/* CSS when browser window is 880px or less------------- */
+@media (max-width: 880px) {
+  /* style change for header and navigation bar */
+  #header-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  nav ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* style change for content containers*/
+  #content-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  #main-content-container {
+    width: 80vw;
+  }
+  /* style change for images */
+  .imageContent-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6vh;
+  }
+  .imageContent-container h2 {
+    text-align: center;
+  }
+  .imageContent-img {
+    margin: 1vh auto;
+    width: 50vw;
+  }
+
+  /* style change for sidebar */
+  #sidebar-container {
+    width: 80vw;
+    margin-left: 0;
+  }
+  .sidebar-video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* CSS when browser window is 375px or less-----------*/
+@media (max-width: 375px) {
+  /* style change for images */
+  .imageArticle-img {
+    width: 70vw;
+    float: none;
+    margin: 1vw;
+  }
+}
+
+/* ----------------- 
+  style for report 
+------------------*/
+
+.report-container {
+  margin: 0 auto;
+  width: 50vw;
+}
+.report-container section {
+  margin: 5vh 0;
+}
+.report-container p {
+  line-height: 4vh;
+}
+.report-container img {
+  width: 50vw;
+}
+.mock-ups {
+  margin: 4vh 0;
+}
+.report-container h1,
+.mock-ups h5 {
+  text-align: center;
+}

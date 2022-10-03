@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- the head section contains all the invisible information about this page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a website for a community of people intersted in learning English">
+    <meta name="author" content="My English Club">
+    <meta name="keywords" content="English Learning Listening Speaking Reading Writing Vocabulary Grammar ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My English Club - Home</title>
+    <link rel="stylesheet" href="styleSheet/style.css">
+    <!-- link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- links for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- link for CSS libry, bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<!-- this body section contains the structure for all the visble content -->
+
+<body>
+    <!-- header and navigation bar section-->
+    <div id="header-nav-container">
+        <header id="header-container">
+            <a href="index.html"><i class="fa fa-language" aria-hidden="true"></i></a>
+            <h1>My English Club</h1>
+        </header>
+        <!-- navigation bar that contains dropdown content -->
+        <nav>
+            <ol>
+                <li><a href="index.html" id="active">Home</a></li>
+                <li class="nav-dropdown"><a href="#">Skills</a>
+                    <!-- dropdown content -->
+                    <div class="nav-dropdown-content">
+                        <ul>
+                            <li><a href="listeningSpeaking.html">Listening & Speaking</a></li>
+                            <li><a href="readingWriting.html">Reading & Writing</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="vocabulary.html">Vocabulary</a></li>
+                <li><a href="grammar.html">Grammar</a></li>
+            </ol>
+        </nav>
+    </div>
+
+    <div id="content-container">
+        <!--main content for home page that contains welcome section and discover section-->
+        <div id="main-content-container">
+            <!-- the welcome section that introduces the website -->
+            <div id="home-welcome-container">
+                <h1>Home</h1>
+                <img src="media/learningEnglish-home.jpeg" alt="an image of learning English">
+                <p>Welcome to <strong>My English Club</strong> . Here you can find sufficient articles about how to
+                    improve your English skills, vocabulary and grammar. Reading these articles will help you learn more
+                    about how to
+                    improve your English skills and help you use English more effectively so that you can do well in
+                    your studies,
+                    get ahead at work and confidently communicate in English in your free time.</p>
+                <h1></h1>
+            </div>
+
+            <!-- the discover section that includes 4 parts for visitors to browse -->
+            <div id="home-discover-container">
+                <h1>Chose the part you want to discover</h1>
+                <!-- the first part:listening & speaking -->
+                <div class="imageContent-container">
+                    <img src="media/listeningSpeaking-home.jpeg" alt="an image for listening and speaking"
+                        class="imageContent-img">
+                    <div class="imageContent-content">
+                        <a href="listeningSpeaking.html">
+                            <h2>Listening & Speaking</h2>
+                        </a>
+                        <p>Here you can find articles about listening and speaking. Listening will help you to improve
+                            your understanding of the language and your pronunciation. Speaking allows you to
+                            communicate
+                            with others and to express your ideas.</p>
+                    </div>
+                </div>
+
+                <!-- the second part: reading & writing -->
+                <div class="imageContent-container">
+                    <img src="media/readingWriting-home.jpeg" alt="an image for reading and writing"
+                        class="imageContent-img">
+                    <div class="imageContent-content">
+                        <a href="readingWriting.html">
+                            <h2>Reading & Writing</h2>
+                        </a>
+                        <p>Here you can find articles about reading and speaking. Reading will help you to improve your
+                            understanding of the language and build your vocabulary. Writing allows you to write
+                            articles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- the third part: vocabulary -->
+                <div class="imageContent-container">
+                    <img src="media/vocabulary-home.jpeg" alt="an image for words" class="imageContent-img">
+                    <div class="imageContent-content">
+                        <a href="vocabulary.html">
+                            <h2>Vocabulary</h2>
+                        </a>
+                        <p>Here you can find articles about vocabulary learning. Vocabulary is fundamantal to English
+                            learning.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- the fourth part: grammar -->
+                <div class="imageContent-container">
+                    <img src="media/grammar-home.jpeg" alt="an image for grammar" width="300px"
+                        class="imageContent-img">
+                    <div class=" imageContent-content">
+                        <a href="grammar.html">
+                            <h2>Grammar</h2>
+                        </a>
+                        <p>Here you can find articles about grammar. Grammar provides information that helps the
+                            reader's comprehension. It is the structure that conveys precise meaning.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- side bar for home page cantains two sections. The first section is two videos and
+             the second section is about subscription-->
+        <div id="sidebar-container">
+            <!-- video section in sidebar -->
+            <div id="sidebar-first-container">
+                <!-- A Youtube video about the importance of English. -->
+                <div class="sidebar-video">
+                    <iframe src="https://www.youtube.com/embed/kCG5Bb9PfjY" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>The Importance of English </p>
+                </div>
+                <!-- A Youtube video about English learning strategies. -->
+                <div class="sidebar-video">
+                    <iframe src="https://www.youtube.com/embed/UaADF2I2bd4" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>English Learning Strategies</p>
+                </div>
+            </div>
+
+            <!-- subscription section in sidebar-->
+            <div id="sidebar-subscribe-container">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Subscribe to our monthly newsletter and receive:
+                <ul>
+                    <li>update on the lastest articles about English learning</li>
+                    <li>fresh learning tips and helpful advice</li>
+                    <li>updates on new, free learning content</li>
+                </ul>
+                </p>
+                <!-- form that uses Bootstrap template to style it-->
+                <form id="subcription-form" action="#">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-success">submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>My English Club</h3>
+            <p>Better English, more opportunities</p>
+            <!-- inserting icons from "font awesome" website by using correct tags and class names -->
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copytight &copy;2021 My English Club</p>
+        </div>
+    </footer>
+    <!-- go back to home page btn-->
+    <button id="back-home-btn" onclick="location.href='../index.html'">Home Page</button>
+
+</body>
+<!-- javescrpt for this page -->
+<script src="script/index.js"></script>
+
+</html>

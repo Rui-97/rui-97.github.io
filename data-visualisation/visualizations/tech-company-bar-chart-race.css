@@ -1,0 +1,59 @@
+button {
+  width: 80px;
+  height: 30px;
+  border-radius: 4px;
+  margin: 10px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+#instruction {
+  margin-left: 10px;
+}
+
+svg {
+  margin: 20px;
+}
+
+.chart-container .headnote {
+  font-size: 15px;
+  fill: #d3d3d3;
+  font-weight: bold;
+  text-anchor: middle;
+  /* dominant-baseline: center; */
+}
+
+.chart-container .current-year {
+  font-size: 45px;
+  fill: #d3d3d3;
+}
+
+.y-axis text,
+.y-axis .domain,
+.x-axis .domain {
+  display: none;
+}
+
+.x-axis .tick line {
+  color: #d3d3d3;
+}
+
+.x-axis .tick text {
+  color: #d3d3d3;
+}
+
+.columns .column-container .column-rect {
+  fill: rgb(65, 115, 223, 0.8);
+}
+
+.columns .column-container .column-title {
+  text-anchor: end;
+  fill: white;
+  /* dominant-baseline: middle; */
+  font-size: 14px;
+}
+
+.columns .column-container .column-value {
+  /* dominant-baseline: middle; */
+  font-size: 14px;
+}

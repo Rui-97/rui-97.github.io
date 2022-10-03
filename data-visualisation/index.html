@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case study 2: Data visualisation</title>
+
+  <!-- Libraries -->
+  <script src="lib/p5.min.js"></script>
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="visualizations/vaccination-map.css">
+  <link rel="stylesheet" href="visualizations/tech-company-bar-chart-race.css">
+
+
+  <!-- Main sketch file -->
+  <script src="sketch.js"></script>
+
+  <!-- Main visualisation files -->
+  <script src="./visualizations/tech-diversity-race/tech-diversity-race.js"></script>
+  <script src="./visualizations/tech-diversity-gender.js"></script>
+  <script src="./visualizations/pay-gap-by-job-2017/pay-gap-by-job-2017.js"></script>
+  <script src="./visualizations/pay-gap-1997-2017.js"></script>
+  <script src="./visualizations/climate-change.js"></script>
+  <script src="./visualizations/canada-cheese-comsumption/canada-cheese-consumption.js"></script>
+  <script src="./visualizations/GDP/GDP-of-the-top-5-countries-2021.js"></script>
+  <script src="./visualizations/atmospheric-carbon-dioxide/atmospheric-carbon-dioxide-2005-2021.js"></script>
+  <script src="./visualizations/US-vaccination-map.js"></script>
+  <script src="./visualizations/tech-company-bar-chart-race.js"></script>
+
+  <!-- Add extra scripts below -->
+  <script src="./tools/helper-functions.js"></script>
+  <script src="./tools/gallery.js"></script>
+  <script src="./visualizations/tech-diversity-race/donut-chart.js"></script>
+  <script src="./visualizations/pay-gap-by-job-2017/bubble-chart.js"></script>
+  <script src="./visualizations/GDP/composed-chart.js"></script>
+  <script src='./visualizations/canada-cheese-comsumption/box.js'></script>
+  <script src="./visualizations/canada-cheese-comsumption/waffle.js"></script>
+  <script src="./visualizations/atmospheric-carbon-dioxide/circle.js"></script>
+  <script src="./visualizations/atmospheric-carbon-dioxide/bar.js"></script>
+
+  <!-- map data -->
+  <script src="data/extension-data/vaccination-data.js"></script>
+  <!-- bar chart race data -->
+  <script src="data/extension-data/top-10-tech-companies.js"></script>
+</head>
+
+<body>
+  <div id="app" class="container">
+    <ul id="visuals-menu"></ul>
+  </div>
+  <button id="back-home-btn" onclick="location.href='../index.html'">Home Page</button>
+</body>
+
+</html>
