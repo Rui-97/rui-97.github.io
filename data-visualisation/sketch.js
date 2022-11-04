@@ -11,7 +11,8 @@ function setup() {
   gallery = new Gallery();
 
   // Add the visualisation objects here.
-  gallery.addVisual(new TechDiversityRace());
+  const techDiversityRace = new TechDiversityRace();
+  gallery.addVisual(techDiversityRace);
   gallery.addVisual(new TechDiversityGender());
   gallery.addVisual(new PayGapByJob2017());
   gallery.addVisual(new PayGapTimeSeries());
@@ -21,6 +22,9 @@ function setup() {
   gallery.addVisual(new AtmosphericCO2());
   gallery.addVisual(new USVaccination());
   gallery.addVisual(new TechCompanyRanking());
+
+  const firstMenuItem = document.querySelectorAll(".menu-item")[0];
+  firstMenuItem.classList.add("selected");
 }
 
 function draw() {
