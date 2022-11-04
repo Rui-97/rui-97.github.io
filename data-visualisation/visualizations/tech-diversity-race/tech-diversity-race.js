@@ -21,8 +21,10 @@ function TechDiversityRace() {
       // this.loaded to true.
       function (table) {
         self.loaded = true;
+        console.log(self.loaded);
       }
     );
+    console.log(this.loaded + " outside");
   };
 
   this.setup = function () {
@@ -35,6 +37,7 @@ function TechDiversityRace() {
 
     // Create a select DOM element.
     this.select = createSelect();
+    console.log(this.select);
 
     // Set select position.
     this.select.position((width / 5) * 2, height / 10);

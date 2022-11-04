@@ -86,6 +86,7 @@ function Gallery() {
       // Initialise visualisation if necessary.
       if (this.selectedVisual.hasOwnProperty("setup")) {
         this.selectedVisual.setup();
+        console.log("called");
       }
 
       // Enable animation in case it has been paused by the current
